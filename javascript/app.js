@@ -35,14 +35,13 @@ var subject = [
 'The Tooth Fairy',
 'Your long lost stepmother',
 'Aunt Jebadiah\'s world famous peach cobbler',
-'A flock of buffalo',
-'A gaggle of geese',
 'The NSA',
 'Spider Man',
 'Donald Trump',
 'Satan',
 'Kanye West',
-'A horde of lusty women'
+'A horde of lusty women',
+'Dwayne "The Rock" Johnson'
 ]
 
 var verb = [
@@ -71,7 +70,7 @@ var andThen = [
 'and my turtle only has one speed.',
 'so I had to stop by Arby\'s on the way here.',
 ', I was barely able to escape.',
-', I was tortured for days.',
+', it was torture.',
 ', it\'s even worse than the last time.',
 'so I\'ve decided to join the Priesthood.'
 ]
