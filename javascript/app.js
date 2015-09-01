@@ -39,7 +39,7 @@ var subject = [
 'A gaggle of geese',
 'The NSA',
 'Spider Man',
-'Joe Biden',
+'Donald Trump',
 'Satan',
 'Kanye West',
 'A horde of lusty women'
