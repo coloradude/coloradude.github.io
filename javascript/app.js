@@ -35,20 +35,20 @@ var subject = [
 'The Tooth Fairy',
 'Your long lost stepmother',
 'Aunt Jebadiah\'s world famous peach cobbler',
-'The NSA',
 'Spider Man',
 'Donald Trump',
 'Satan',
 'Kanye West',
 'A horde of lusty women',
-'Dwayne "The Rock" Johnson'
+'Dwayne "The Rock" Johnson',
+'Macho Man Randy Savage'
 ]
 
 var verb = [
 'exploded violently',
 'ate my pants',
 'siphoned all of my gasoline',
-'was struck by lightning',
+'kicked my dog',
 'brought on the wrath of God',
 'ate all of my chocolate-chip cookies',
 'pooped all over my car',
@@ -97,7 +97,13 @@ var bullshitGif = [
 'HardtofindOrangeAnaconda',
 'LimitedHatefulCowbird',
 'AssuredLikelyCaracal',
-'GrimBelovedAgouti'
+'GrimBelovedAgouti',
+'DevotedForkedBoa',
+'AmazingReasonableFrillneckedlizard',
+'OptimalElatedJay',
+'AptHeftyChinesecrocodilelizard',
+'DenseUnsungIndianrhinoceros',
+'ComplicatedLargeAmericanblackvulture'
 ]
 
 
