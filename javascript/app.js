@@ -72,8 +72,8 @@ var andThen = [
 'so I had to stop by Arby\'s on the way here.',
 ', I was barely able to escape.',
 ', I was tortured for days.',
-', it\s even worse than the last time.',
-'so I\'ve decided to become join the Priesthood.'
+', it\'s even worse than the last time.',
+'so I\'ve decided to join the Priesthood.'
 ]
 
 var anotherExcuse = [
