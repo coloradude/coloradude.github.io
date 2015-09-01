@@ -69,7 +69,7 @@ var andThen = [
 'so I went to Africa instead.',
 'so I had to hitch a ride on the back of a Segway.',
 'and my turtle only has one speed.',
-'so I had to stop by Arby\'s on the way in.',
+'so I had to stop by Arby\'s on the way here.',
 ', I was barely able to escape.',
 ', I was tortured for days.',
 ', it\s even worse than the last time.',
