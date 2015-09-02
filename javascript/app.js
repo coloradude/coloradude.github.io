@@ -9,16 +9,21 @@ $(document).ready(function(){
   });
 
    function shittyExcuse(){ 
+
+    function randomIndex(array){
+      return array[Math.floor(Math.random() * array.length)];
+    }
     //Get the gfy
-    var randomGifRequest = 'http://gfycat.com/cajax/get/' + bullshitGif[Math.floor(Math.random() * bullshitGif.length)]
+    var randomGifRequest = 'http://gfycat.com/cajax/get/' + randomIndex(bullshitGif);
     $.get(randomGifRequest).then(function(responseData){
       $('video').attr('src', responseData.gfyItem.mp4Url)
     }); 
+
     //Randomize strings
-    var randomSubject = subject[Math.floor(Math.random() * subject.length)]
-    var randomVerb = verb[Math.floor(Math.random() * verb.length)]
-    var randomAndThen = andThen[Math.floor(Math.random() * andThen.length)]
-    var randomAnotherExcuse = anotherExcuse[Math.floor(Math.random() * anotherExcuse.length)]
+    var randomSubject = randomIndex(subject);
+    var randomVerb = randomIndex(verb);
+    var randomAndThen = randomIndex(andThen);
+    var randomAnotherExcuse = randomIndex(anotherExcuse);
     if (randomAndThen[0] !== ','){
       randomAndThen = ' '.concat(randomAndThen)
     }
@@ -48,7 +53,7 @@ var subject = [
 'Kanye West',
 'A horde of lusty women',
 'Dwayne "The Rock" Johnson',
-'Macho Man Randy Savage'
+'"Macho Man" Randy Savage'
 ]
 
 var verb = [
