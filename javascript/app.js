@@ -1,6 +1,14 @@
 $(document).ready(function(){
   $('.button').on('click', function(){
+    shittyExcuse();
+  });
+  $(document).keypress(function(e) {
+    if(e.which == 13) {
+      shittyExcuse();
+    }
+  });
 
+   function shittyExcuse(){ 
     //Get the gfy
     var randomGifRequest = 'http://gfycat.com/cajax/get/' + bullshitGif[Math.floor(Math.random() * bullshitGif.length)]
     $.get(randomGifRequest).then(function(responseData){
@@ -20,8 +28,7 @@ $(document).ready(function(){
     $('.excuse').text(completedExcuse).addClass('display');
     $('.button').attr('value', randomAnotherExcuse);
     $('video').addClass('display');
-
-  });
+  }
 
 var subject = [
 'My mother',
@@ -63,16 +70,16 @@ var verb = [
 
 var andThen = [
 'and this wasn\'t the first time.',
-'and then the CIA kidnapped me.',
+'and then kidnapped me to Africa.',
 'and now I have cancer.',
-'so I went to Africa instead.',
 'so I had to hitch a ride on the back of a Segway.',
 'and my turtle only has one speed.',
 'so I had to stop by Arby\'s on the way here.',
 ', I was barely able to escape.',
 ', it was torture.',
 ', it\'s even worse than the last time.',
-'so I\'ve decided to join the Priesthood.'
+'so I\'ve decided to join the Priesthood.',
+'and now my family disowned me.'
 ]
 
 var anotherExcuse = [
