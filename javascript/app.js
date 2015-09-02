@@ -65,7 +65,9 @@ var verb = [
 'rose from the dead',
 'tazed me',
 'molested my cat',
-'shot me with a bazooka'
+'shot me with a bazooka',
+'caught fire',
+'violated me with a fishing rod'
 ]
 
 var andThen = [
@@ -79,7 +81,8 @@ var andThen = [
 ', it was torture.',
 ', it\'s even worse than the last time.',
 'so I\'ve decided to join the Priesthood.',
-'and now my family disowned me.'
+'and now my family disowned me.',
+'so yeah I had to take care of that.'
 ]
 
 var anotherExcuse = [
