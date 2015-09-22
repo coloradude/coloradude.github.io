@@ -245,8 +245,6 @@ function rollEm(currentPlayer){
     }
   )
   resetScoringOptions();
-
-
   if (currentPlayer.status.rolls === 0 || !$('.die').hasClass('disabled')){
     currentPlayer.status.inHand = [];
     var currentRoll = rollTheDice(currentPlayer.status.numOfDice);
@@ -319,13 +317,14 @@ function updatePoints(hasScore, player, btnClass, buttonText, tableClass, player
       playerScoreObj.value = hasScore;
       nextTurn();
       $('disabled-score').removeClass('disabled-score');
+      $('.big-button').off('click');
       $('.big-button').on('click', function(){
         startTurn();
       })
     });
   }
   else if (!playerScoreObj.isActive){
-    $(btnClass).addClass('disabled-score').off('click');
+    $(btnClass).addClass('disabled-score').off('click').off('click');
   }
 }
 
@@ -344,8 +343,7 @@ function resetScoringOptions(){
   $('.lg-straight').html('Large Straight').off('click');
   $('.chance').html('Chance').off('click');
   $('.yahtzoo').html('Yahtzoo!').off('click');
-  $('.button').removeClass('active');
-  $('.yahtzoo').removeClass('active');
+  $('.button, .yahztoo').removeClass('active , disabled-score');
 }
 
 function nextTurn(){
@@ -394,8 +392,8 @@ function setUpScratches(currentPlayer){
   scratchableScores($('.fours'), currentPlayer.scores.fours, '.4-p' + num);
   scratchableScores($('.fives'), currentPlayer.scores.fives, '.5-p' + num);
   scratchableScores($('.sixes'), currentPlayer.scores.sixes, '.6-p' + num);
-  scratchableScores($('.three-of-a-kind'), currentPlayer.scores.threeOfAKind, '.three-of-a-kind-p' + num);
-  scratchableScores($('.four-of-a-kind'), currentPlayer.scores.fourOfAKind, '.four-of-a-kind-p' + num);  
+  scratchableScores($('.three-of-a-kind'), currentPlayer.scores.threeOfAKind, '.4-of-a-kind-p' + num);
+  scratchableScores($('.four-of-a-kind'), currentPlayer.scores.fourOfAKind, '.4-of-a-kind-p' + num);  
   scratchableScores($('.sm-straight'), currentPlayer.scores.smallStraight, '.sm-straight-p' + num);
   scratchableScores($('.lg-straight'), currentPlayer.scores.largeStraight, '.lg-straight-p' + num);
   scratchableScores($('.full-house'), currentPlayer.scores.fullHouse, '.full-house-p' + num);
@@ -433,8 +431,6 @@ function gameOver(){
   }
   for (var num in player1.scores) {
     player1Total += player1.scores[num].value;
-    console.log(player1.scores)
-    console.log(num)
   }
   for (var num in player2.scores) {
     player2Total += player2.scores[num].value;
