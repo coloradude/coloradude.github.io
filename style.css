@@ -1,13 +1,9 @@
 .gameboard {
-/*  width: 60%;*/
   height: 200px;
-/*  float: left;
-*/}
+}
 
 .scorecard {
-/*  width: 40%;
-  float: left;*/
-/* padding: 0px; */}
+}
 
 body {
   background-color: red;
@@ -176,6 +172,7 @@ th {
 
 
 table {
+  display: block;
       -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
   border-radius: 5px;
